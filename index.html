@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-responsive.css">
+        <link rel="icon" type="image/png" href="img/icone.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+
+        <title>Meilleurs Voeux !</title>
+    </head>
+
+    <body>
+        <div id="langues">
+            <button id="button-test" title="Pour tester la page, cliquez ici">Clic !</button>
+            <button id="francais">Français</button>
+            <a href="../voeux2018/english.html"><button id="english">English</button></a>
+        </div>
+        
+        <!--Section compteur-->
+        <section>
+            <div id="section_compteur">
+                <p id="intro">L'année <strong>2017</strong> se termine...</p>
+                <p id="decompte">Plus que <span id="secondes">10</span> secondes !</p>
+            </div>
+            
+            <div id="bonne_annee">
+                <p>Bonne Année 2018 !!!</p>
+            </div>
+        </section>
+
+        <!--section Retrospective-->
+        <section id="section_retro">
+            <div id="form">
+                <p>Faisons une petite rétrospective... <br />
+                Qu'avez-vous fait cette année ?</p>
+                <input type="text" name="retro" id="formRetro" size="50" />
+                <div id="buttons">
+                    <button id="ajouter">Ajouter</button>
+                    <button id="fini">J'ai fini !</button>
+                </div>
+            </div>
+            <div id="retro_list">
+                <p id="precap"></p>
+                <ul id="list">
+                </ul>
+            </div>
+
+            <div id="message_final">
+                <p>Quelle belle année, bien remplie !</p>
+                <p id="souhait">Je vous souhaite donc une année <span>2018</span> encore meilleure !</p>
+                <p id="signature">Annick MAURIANGE</p>
+            </div>
+        </section>
+
+        <!--footer avec décompte dynamique-->
+        <footer>
+            Cette application a été créée avec les connaissances acquises dans le cadre du programme <a href="https://openclassrooms.com/paths/developpeur-web-junior" target="_blank">Développeur Web Junior</a> sur OpenClassrooms.<br />
+            Cette page a une vocation exclusivement ludique, aucune information saisie ne sera stockée ni utilisée à d'autres fins.
+        </footer>
+
+
+    </body>
+
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/retro.js"></script>
+    
+</html>

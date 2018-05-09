@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style_responsive.css">
+        <link rel="icon" type="image/png" href="img/icone.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+
+        <title>Happy new year !</title>
+    </head>
+
+    <body>
+        <div id="langues">
+            <button id="button-test" title="Click here to try !">Click !</button>
+            <a href="../voeux2018/index.html"><button id="francais">Français</button></a>
+            <button id="english">English</button>
+        </div>
+        <!--compteur-->
+        <section>
+            <div id="section_compteur">
+                <p id="intro"><strong>2017</strong> is ending...</p>
+                <p id="decompte">Only <span id="secondes"></span> seconds left !</p>
+            </div>
+            
+            <div id="bonne_annee">
+                <p>Happy New Year 2018 !!!</p>
+            </div>
+        </section>
+        <!--section Retrospective-->
+        <section id="section_retro">
+            <div id="form">
+                <p>Let's remember... What did you do this year ?</p>
+                <input type="text" name="retro" id="formRetro" size="50" />
+                <div id="buttons">
+                    <button id="ajouter">Add</button>
+                    <button id="fini">Done !</button>
+                </div>
+            </div>
+            <div id="retro_list">
+                <p id="precap"></p>
+                <ul id="list">
+                </ul>
+            </div>
+
+            <div id="message_final">
+                <p>What a beautiful year you had !</p>
+                <p id="souhait">I wish you an amazing and better year for <span>2018</span> !</p>
+                <p id="signature">Annick MAURIANGE</p>
+            </div>
+        </section>
+
+        <!--footer avec décompte dynamique-->
+        <footer>
+            This application was made with <a href="https://openclassrooms.com/paths/developpeur-web-junior" target="_blank">the Web Developer's program</a> on OpenClassrooms.<br />
+            This page is exclusively playful, no information will be stored or used for other purposes.
+        </footer>
+
+    </body>
+
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/retro.js"></script>
+    
+</html>
